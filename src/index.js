@@ -3,9 +3,13 @@ import { render } from 'react-dom'
 import { Provider } from 'react-redux'
 import { createStore,applyMiddleware } from 'redux'
 import rootReducer from './reducers'
-import { combineForms } from 'react-redux-form';
+//import { combineForms } from 'react-redux-form';
 import App from './components/App'
  import thunk from 'redux-thunk';
+ import BasicExample from './components/basicExample';
+ import ParamsExample from './components/ParamsExample';
+ import NoMatchExample from './components/NoMatchExample';
+ import AuthExample from './components/AuthExample';
 
 // const initialUserState = {
 //   firstName: '',
@@ -61,7 +65,7 @@ render(
 // render(
  
 
-// <div>dfdff</div>
+// <AuthExample/>
 //   ,
 //   document.getElementById('root1')
 // )

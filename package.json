@@ -7,17 +7,20 @@
     "start": "webpack-dev-server --open --mode development",
     "build": "webpack --mode production",
     "test": "jest --watchAll",
-    "jest-help": "jest --help"
+    "jest-help": "jest --help",
+    "babel": "babel script.js -d lib"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.3.4",
+    "@babel/plugin-proposal-class-properties": "^7.3.4",
     "@babel/preset-env": "^7.3.4",
     "@babel/preset-react": "^7.0.0",
     "axios": "^0.18.0",
     "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.1",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.10.0",
     "html-loader": "^0.5.5",
@@ -29,6 +32,7 @@
     "react-redux": "^4.4.9",
     "redux": "^4.0.1",
     "redux-thunk": "^2.3.0",
+    "style-loader": "^0.23.1",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.2.3",
     "webpack-dev-server": "^3.2.1"
@@ -36,7 +40,9 @@
   "dependencies": {
     "babel-jest": "^24.5.0",
     "jest": "^24.5.0",
-    "react-test-renderer": "^16.8.4"
+    "react-router-dom": "^4.4.0",
+    "react-test-renderer": "^16.8.4",
+    "redux-saga": "^1.0.2"
   },
   "jest": {
     "setupFilesAfterEnv": [

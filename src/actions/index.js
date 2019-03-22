@@ -4,9 +4,13 @@ export const increment = text => ({
   payload: nextTodoId++,
 
 })
-export const submit = text => ({
-  type: 'submit',
+export const add = text => ({
+  type: 'add',
   text
+})
+export const toggle = textkey => ({
+  type: 'toggle',
+  textkey
 })
 
 
