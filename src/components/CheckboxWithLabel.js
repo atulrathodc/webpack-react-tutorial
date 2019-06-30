@@ -1,4 +1,5 @@
 import React from 'react';
+import Icon from '../logo.png';
 
 export default class CheckboxWithLabel extends React.Component {
 
@@ -18,6 +19,7 @@ export default class CheckboxWithLabel extends React.Component {
   render() {
     return (
       <label>
+        <img src={Icon}/>
         <input
           type="checkbox"
           checked={this.state.isChecked}
